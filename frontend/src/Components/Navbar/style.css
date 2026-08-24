@@ -1,0 +1,377 @@
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+    transition: all 0.3s ease;
+}
+
+.navbar-overlay.scrolled {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nav-link-underline {
+    border-bottom: 2px solid transparent !important;
+    padding-bottom: 4px !important;
+}
+
+.nav-link-underline.active {
+    border-bottom-color: #16a34a !important;
+}
+
+/* =====================================
+   NAVBAR ACTION BUTTONS
+===================================== */
+
+.icon-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-tool-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: #1a1a1a;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.navbar-tool-btn:hover {
+    background-color: rgba(22, 163, 74, 0.15);
+    color: #16a34a;
+    transform: scale(1.08);
+}
+
+.navbar-tool-btn i {
+    transition: all 0.5s ease;
+}
+
+.navbar-tool-btn:hover i {
+    transform: scale(1.08);
+}
+
+.desktop-only-control {
+    display: flex;
+    align-items: center;
+}
+
+/* =====================================
+   CART
+===================================== */
+
+.cart-icon-btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.cart-icon {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.cart-badge {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #16a34a;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    z-index: 2;
+}
+
+.cart-icon-btn:hover {
+    background-color: rgba(22, 163, 74, 0.15);
+    color: #16a34a;
+    transform: scale(1.08);
+}
+
+.mobile-login-link {
+    display: none;
+}
+
+.desktop-login-link {
+    display: flex;
+}
+
+
+/* =====================================
+   ACCOUNT
+===================================== */
+.account-btn {
+    background: #fff;
+    transition: all 0.25s ease;
+}
+
+.account-btn:hover {
+    border-color: #198754 !important;
+    background-color: #f8fffb;
+}
+
+.account-btn:focus {
+    box-shadow: none !important;
+}
+
+.account-avatar {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.account-name {
+    max-width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.account-chevron {
+    font-size: 10px;
+    transition: all 0.5s ease;
+}
+
+.account-chevron.rotate {
+    transform: rotate(180deg);
+}
+
+.account-dropdown {
+    position: absolute !important;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 230px;
+    min-width: 230px;
+    animation: accountDropdown 0.4s ease;
+}
+
+@keyframes accountDropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.account-dropdown-avatar {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+.account-dropdown .dropdown-item {
+    transition: all 0.2s ease;
+}
+
+.account-dropdown .dropdown-item:hover {
+    background-color: #f1f8f4;
+    color: #198754;
+}
+
+.account-dropdown .dropdown-item.text-danger:hover {
+    background-color: #fff1f1;
+    color: #dc3545 !important;
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 991.98px) {
+
+    /* Offcanvas */
+    #offcanvasRight {
+        width: 260px !important;
+    }
+
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch !important;
+        padding: 20px 18px;
+    }
+
+    .offcanvas-body .navbar-nav {
+        width: 100%;
+        margin: 0 !important;
+        padding: 0;
+        gap: 3px !important;
+        align-items: stretch !important;
+    }
+
+    .offcanvas-body .navbar-nav .nav-item {
+        width: 100%;
+    }
+
+    .offcanvas-body .navbar-nav .nav-link {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 44px;
+        padding: 10px 12px !important;
+        border-radius: 8px;
+        border-bottom: none !important;
+    }
+
+    .offcanvas-body .navbar-nav .nav-link:hover {
+        background-color: rgba(22, 163, 74, 0.08);
+    }
+
+    .offcanvas-body .navbar-nav .nav-link.active {
+        background-color: rgba(22, 163, 74, 0.08);
+        color: #16a34a !important;
+        border-bottom: none !important;
+    }
+
+    .icon-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch !important;
+        width: 100%;
+        gap: 8px;
+        margin-top: 15px !important;
+    }
+
+    .desktop-only-control {
+        display: none !important;
+    }
+
+    .desktop-login-link {
+        display: none !important;
+    }
+
+    .mobile-login-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        min-height: 44px;
+        padding: 10px 12px;
+        color: #1a1a1a;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: all 0.2s ease;
+    }
+
+    .mobile-login-link:hover {
+        background-color: rgba(22, 163, 74, 0.08);
+        color: #16a34a;
+    }
+
+    /* =====================================
+       MOBILE ACCOUNT
+    ===================================== */
+    .account-wrapper {
+        width: 100%;
+    }
+
+    .account-btn {
+        width: 100%;
+        min-height: 46px;
+        justify-content: flex-start;
+        border-radius: 10px !important;
+        padding: 5px 10px !important;
+    }
+
+    .account-name {
+        flex: 1;
+        max-width: none;
+        text-align: left;
+    }
+
+    .account-chevron {
+        margin-left: auto;
+    }
+
+    .account-dropdown {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        margin-top: 8px !important;
+        padding: 8px !important;
+        border-radius: 12px !important;
+        box-sizing: border-box;
+    }
+
+    .account-dropdown>div:first-child {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .account-user-info {
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .account-dropdown-username {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .account-dropdown .dropdown-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+/* Media Query */
+@media (max-width: 991px) {
+    .account-dropdown {
+        position: static !important;
+        width: 100%;
+        min-width: 100%;
+        margin-top: 8px;
+    }
+
+    .account-btn {
+        width: 100%;
+        justify-content: flex-start;
+        border-radius: 10px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-link-underline {
+        border-bottom: 2px solid transparent;
+        padding-bottom: 4px;
+    }
+
+    .nav-link-underline.active {
+        border-bottom-color: #16a34a;
+    }
+}

@@ -1,0 +1,51 @@
+/* Start Section Categories */
+.title-section h2 {
+    color: #0f430f;
+    font-weight: bold;
+}
+
+.title-section span {
+    color: #3e743e;
+    font-size: 18px;
+    word-spacing: 2px;
+}
+
+.categories-item {
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.categories-item:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.categories-img-wrap {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.categories-item .categories-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.categories-item:hover .categories-img {
+    transform: scale(1.1);
+}
+
+.categories-item a {
+    text-decoration: none;
+}
+
+.categories-item a .caption {
+    text-align: center;
+    font-size: 18px;
+    white-space: normal;
+    color: #0f430f;
+    font-weight: 500;
+    padding: 10px;
+}

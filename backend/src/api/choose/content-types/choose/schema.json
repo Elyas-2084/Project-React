@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chooses",
+  "info": {
+    "singularName": "choose",
+    "pluralName": "chooses",
+    "displayName": "Choose"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

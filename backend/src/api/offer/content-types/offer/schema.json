@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offers",
+  "info": {
+    "singularName": "offer",
+    "pluralName": "offers",
+    "displayName": "Offer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "offerTag": {
+      "type": "string"
+    },
+    "offerDiscount": {
+      "type": "string"
+    },
+    "offerTitle": {
+      "type": "string"
+    },
+    "offerEnd": {
+      "type": "string"
+    },
+    "offerIcon": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

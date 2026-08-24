@@ -1,0 +1,75 @@
+.subscribe-section {
+    background-color: #E4FBEB4C;
+}
+
+.subscribe-holder .row {
+    align-items: center;
+    row-gap: 20px;
+}
+
+.subscribe-title h2 {
+    color: #0f430f;
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.subscribe-title span {
+    color: #3e743e;
+    font-size: 15px;
+}
+
+.send-email {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.send-email .form-control {
+    border-radius: 10px;
+    padding: 12px 16px;
+    border: 1px solid #d9d9d9;
+    max-width: 380px;
+}
+
+.send-email .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(22, 163, 74, 0.35);
+    border-color: #16a34a;
+}
+
+.send-email .btn-success {
+    background-color: #16a34a;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.send-email .btn-success:hover {
+    background-color: #0d7a3f;
+}
+
+@media (max-width: 767px) {
+    .send-email {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .send-email .form-control {
+        max-width: 100%;
+    }
+
+    .send-email input::placeholder {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 867px) {
+    .send-email input::placeholder {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,15 @@
+.products-section {
+    background-color: #E4FBEB4C;
+}
+
+.products-title h2 {
+    color: #0f430f;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.products-title span {
+    color: #3e743e;
+    font-size: 18px;
+    word-spacing: 2px;
+}
